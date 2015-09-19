@@ -8,7 +8,8 @@ class Sequence:
 
     @staticmethod
     def is_valid(nucleotides):
-        upper = nucleotides.upper()
+        upper = nucleotides.upper() // convert all genome chars to upper case
+        
         is_valid  = True;
         for c in upper:
                 is_valid = is_valid and c in Sequence.WEIGHTS
